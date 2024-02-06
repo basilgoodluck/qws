@@ -60,6 +60,7 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
+    position: relative;
 }
 .headerBar-homeSec .mainHome .homeContent > div{
     display: grid;
@@ -121,4 +122,12 @@ body{
 .courseInfoSec .courseSec .textImgSec .imgSec img{
     width: 100%;
     border-radius: 50%;
+}
+
+
+
+/* Test for grid on background image */
+
+.gridTest{
+    display: grid;
 }
