@@ -12,4 +12,8 @@ body{
 .homeSec{
     background-color: #161e3d;
     color: #fff;
+    height: 100vh;
+}
+.homeSec .headSec .navMenu ul{
+    list-style-type: none;
 }
