@@ -9,11 +9,14 @@ body{
     font-family: roboto;
     overflow-x: hidden;
 }
-.homeSec{
-    background-color: #161e3d;
-    color: #fff;
-    height: 100vh;
+.headerContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.homeSec .headSec .navMenu ul{
-    list-style-type: none;
+.headerContent .navMenuItems ul{
+    list-style: none;
+}
+.headerContent .navMenuItems ul li{
+    display: inline-block;
 }
