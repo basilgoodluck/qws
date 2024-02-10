@@ -11,9 +11,11 @@ body{
     background-color: #fdfcff !important;
 }
 .headSection{
-    background-color:#072ad9;
+    background-color:#eee;
     top: 0;
     position: sticky;
+    z-index: 20;
+    box-shadow: 0 0 20px rgb(146, 158, 158);
 }
 .headerContent{
     display: flex;
@@ -48,7 +50,8 @@ body{
 }
 .headerContent .navMenuItems ul li a{
     text-decoration: none;
-    color: #072ad9;
+    /* color: #072ad9; */
+    color: #000;
 }
 .homeSection{
     display: flex;
@@ -60,6 +63,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.homeContent .homeContentTXT h1 span{
+    color: #38dffe;
+    text-shadow: 0 0 5px #000;
 }
 .homeSection .homeContent .homeContentIMG{
     position: relative;
@@ -77,7 +84,7 @@ body{
     height: 100%;
     border-radius: 50%;
     /* background-color: #5E17EB; */
-    background-color: #072ad9;
+    background-color: #38dffe;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -106,6 +113,7 @@ body{
     text-decoration: none;
     color: #fff;
     background-color: #38dffe;
+    box-shadow: 0 0 5px #000;
     border-radius: 12px;
 }
 .homeContent .homeContentTXT .homeContentBTNs :not(:first-child){
