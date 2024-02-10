@@ -8,15 +8,66 @@
 body{
     font-family: roboto;
     overflow-x: hidden;
+    background-color: #fdfcff !important;
 }
 .headerContent{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 2px solid green;
+}
+.headerContent .headerLogo{
+    display: inline-block;
+}
+.headerContent .headerLogo img{
+    height: 50px;
+    object-fit: cover;
+    width: 100px;
+    border: 2px solid green;
+    
+}
+.headerContent .navMenuItems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .headerContent .navMenuItems ul{
+    padding-top: 14px;
+    border: 2px solid green;
     list-style: none;
 }
 .headerContent .navMenuItems ul li{
     display: inline-block;
+    padding: 0 10px;
+}
+.headerContent .navMenuItems ul li a{
+    text-decoration: none;
+    color: #5E17EB;
+}
+.homeSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.homeSection .homeContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.homeSection .homeContent .homeContentIMG{
+    /* flex-basis: 70%; */
+    position: relative;
+    width: 50%;
+}
+.homeSection .homeContent .homeContentIMG::after{
+    content: '';
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #5E17EB;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
 }
