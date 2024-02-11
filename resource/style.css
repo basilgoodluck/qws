@@ -9,9 +9,10 @@ body{
     font-family: roboto;
     overflow-x: hidden;
     background-color: #fdfcff !important;
+    color: #555;
 }
 .headSection{
-    background-color:#eee;
+    background-color:#fdfcff;
     top: 0;
     position: sticky;
     z-index: 20;
@@ -134,5 +135,36 @@ body{
     width: 100%;
 }
 .aboutSection .aboutContent .aboutContentTXT{
+    flex-basis: 42%;
+    display: grid;
+    gap: 10px;
+}
+.aboutSection .aboutContent .aboutContentTXT h4{
+    font-family: Protest Riot;
+    font-size: 2.5rem;
+    color: #222;
+}
+.aboutSection .aboutContent .aboutContentTXT p{
+    color: #555;
+}
+.aboutSection .aboutContent .aboutContentTXT p a{
+    color: #555;
+    box-shadow: 0 0 5px #ccc;
+    padding: 10px 20px ;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.serviceContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.serviceContent .serviceTheme{
+    flex-basis: 40%gfbt yvh77ty;
+}
+.serviceContent .serviceTXT{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     flex-basis: 42%;
 }
