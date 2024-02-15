@@ -5,14 +5,21 @@
     padding: 0;
     margin: 0;
 }
+:root{
+    --deepBlueColor: #0a053d;
+    --orangeColor: #d9520f;
+    --whiteColor: #fff;
+    --greyColor: #6e6c6b;
+    --textColor: #212120;
+}
 body{
     font-family: roboto;
     overflow-x: hidden;
     background-color: #fdfcff !important;
-    color: #555;
+    color: var(--textColor);
 }
 .headSection{
-    background-color:#fdfcff;
+    background-color:var(--deepBlueColor);
     top: 0;
     position: sticky;
     z-index: 20;
@@ -52,7 +59,7 @@ body{
 .headerContent .navMenuItems ul li a{
     text-decoration: none;
     /* color: #072ad9; */
-    color: #000;
+    color: var(--whiteColor);
 }
 .homeSection{
     display: flex;
@@ -66,8 +73,9 @@ body{
     justify-content: space-between;
 }
 .homeContent .homeContentTXT h1 span{
-    color: #38dffe;
-    text-shadow: 0 0 5px #000;
+    color: var(--deepBlueColor);
+    font-size: 2.5rem;
+    /* text-shadow: 0 0 5px #000; */
 }
 .homeSection .homeContent .homeContentIMG{
     position: relative;
@@ -85,7 +93,7 @@ body{
     height: 100%;
     border-radius: 50%;
     /* background-color: #5E17EB; */
-    background-color: #38dffe;
+    background-color: var(--deepBlueColor);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -108,13 +116,13 @@ body{
 }
 .homeContent .homeContentTXT .homeContentBTNs p a{
     display: inline-block;
-    padding: 3px 10px;
-    border: 1px solid #38dffe;
+    padding: 10px 20px ;
+    border: 0;
     font-size: .8rem;
     text-decoration: none;
     color: #fff;
-    background-color: #38dffe;
-    box-shadow: 0 0 5px #000;
+    background-color: var(--deepBlueColor);
+    /* box-shadow: 0 0 5px #000; */
     border-radius: 12px;
 }
 .homeContent .homeContentTXT .homeContentBTNs :not(:first-child){
@@ -142,25 +150,32 @@ body{
 .aboutSection .aboutContent .aboutContentTXT h4{
     font-family: Protest Riot;
     font-size: 2.5rem;
-    color: #222;
+    color: var(--deepBlueColor);
 }
 .aboutSection .aboutContent .aboutContentTXT p{
-    color: #555;
+    color: var(--textColor);
 }
 .aboutSection .aboutContent .aboutContentTXT p a{
-    color: #555;
-    box-shadow: 0 0 5px #ccc;
+    color: var(--whiteColor);
+    background-color: var(--orangeColor);
     padding: 10px 20px ;
     text-decoration: none;
     border-radius: 5px;
 }
 .serviceContent{
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     align-items: center;
 }
 .serviceContent .serviceTheme{
-    flex-basis: 40%gfbt yvh77ty;
+    flex-basis: 40%;
+}
+.serviceContent .serviceTheme h4{
+    color: var(--greyColor);
+}
+.serviceContent .serviceTheme h1{
+    color: var(--deepBlueColor);
+    font-size: 2.5rem;
 }
 .serviceContent .serviceTXT{
     display: flex;
