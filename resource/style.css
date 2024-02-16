@@ -10,6 +10,7 @@
     --orangeColor: #d9520f;
     --whiteColor: #fff;
     --greyColor: #6e6c6b;
+    --mainGreyColor: #f0f2f0;
     --textColor: #212120;
 }
 body{
@@ -128,6 +129,9 @@ body{
 .homeContent .homeContentTXT .homeContentBTNs :not(:first-child){
     margin-left: 30px;
 }
+.aboutSection{
+    background-color: var(--mainGreyColor);
+}
 .aboutSection .aboutContent .aboutTheme{
     flex-basis: 40%;
 }
@@ -178,8 +182,16 @@ body{
     font-size: 2.5rem;
 }
 .serviceContent .serviceTXT{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     flex-basis: 42%;
+}
+.serviceContent .serviceTXT .serviceTXTBox{
+    background-color: var(--deepBlueColor);
+    padding: 30%;
+    color: var(--whiteColor);
+}
+.courseSection{
+    background-color: var(--mainGreyColor);
 }
