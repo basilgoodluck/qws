@@ -67,6 +67,7 @@ body{
     justify-content: center;
     align-items: center;
     /* height: 80vh; */
+    background-color: var(--deepBlueColor);
 }
 .homeSection .homeContent{
     display: flex;
@@ -74,9 +75,12 @@ body{
     justify-content: space-between;
 }
 .homeContent .homeContentTXT h1 span{
-    color: var(--deepBlueColor);
+    color: var(--whiteColor);
     font-size: 2.5rem;
     /* text-shadow: 0 0 5px #000; */
+}
+.homeContent .homeContentTXT p{
+    color: var(--whiteColor);
 }
 .homeSection .homeContent .homeContentIMG{
     position: relative;
@@ -166,12 +170,54 @@ body{
     text-decoration: none;
     border-radius: 5px;
 }
-.aboutSection .aboutUsContent{
-    text-align: right;
+.aboutUsSection .aboutUsContent{
+    /* text-align: right; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
-.aboutSection .aboutUsContent .aboutUsTheme{
-    width: 30%;
-    margin: 0 auto 0 0 ;
+.aboutUsSection .aboutUsContent .aboutUsTheme{
+    grid-area: 1/1;
+    display: grid;
+    gap: 10px;
+}
+.aboutUsSection .aboutUsContent .aboutUsTheme h4{
+    color: var(--greyColor);
+}
+.aboutUsSection .aboutUsContent .aboutUsTheme h1{
+    color: var(--deepBlueColor);
+    font-size: 2rem;
+}
+.aboutUsSection .aboutUsContent .aboutUsTheme p{
+    color: var(--greyColor);
+}
+.aboutUsSection .aboutUsContent .aboutUsContentTXT{
+    grid-column: span 2;
+    /* background-color: #035afc; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.aboutUsContent .aboutUsContentTXT .aboutUsContentTXTBox{
+    background-color: var(--mainGreyColor);
+    padding: 5%;
+}
+.aboutUsContent .aboutUsContentTXT .aboutUsContentTXTBox p i{
+    background-color: var(--whiteColor);
+    color: var(--greyColor);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+}
+.aboutUsContent .aboutUsContentTXT .aboutUsContentTXTBox p span{
+    font-size: 1.2rem;
+    color: var(--greyColor);
+}
+.aboutUsContent .aboutUsContentTXT .aboutUsContentTXTBox h4{
+    color: var(--greyColor);
 }
 .serviceContent{
     /* display: flex; */
