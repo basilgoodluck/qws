@@ -20,7 +20,7 @@ body{
     color: var(--textColor);
 }
 .headSection{
-    background-color:var(--whiteColor);
+    background-color: #000;
     top: 0;
     position: sticky;
     z-index: 20;
@@ -60,14 +60,19 @@ body{
 .headerContent .navMenuItems ul li a{
     text-decoration: none;
     /* color: #072ad9; */
-    color: var(--deepBlueColor);
+    color: var(--whiteColor);
 }
 .homeSection{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 80vh; */
-    background-color: var(--deepBlueColor);
+    height: 60vh;
+    /* background-color: var(--deepBlueColor); */
+    background: url("/resource/images/pexel.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 .homeSection .homeContent{
     display: flex;
@@ -92,7 +97,7 @@ body{
     overflow: hidden;
     /* display: block; */
 }
-.homeSection .homeContent .homeContentIMG::after{
+.homeSection .homeContent .hoeContentIMG::after{
     content: '';
     width: 100%;
     height: 100%;
@@ -126,12 +131,9 @@ body{
     font-size: .8rem;
     text-decoration: none;
     color: #fff;
-    background-color: var(--deepBlueColor);
+    background-color: var(--orangeColor);
     /* box-shadow: 0 0 5px #000; */
     border-radius: 12px;
-}
-.homeContent .homeContentTXT .homeContentBTNs :not(:first-child){
-    margin-left: 30px;
 }
 .aboutSection{
     background-color: var(--mainGreyColor);
@@ -241,7 +243,7 @@ body{
     flex-basis: 42%;
 }
 .serviceContent .serviceTXT .serviceTXTBox{
-    background-color: var(--deepBlueColor);
+    background-color: var(--mainGreyColor);
     padding: 30%;
     color: var(--whiteColor);
 }
