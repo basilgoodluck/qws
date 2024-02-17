@@ -6,8 +6,8 @@
     margin: 0;
 }
 :root{
-    --deepBlueColor: #0a053d;
-    --orangeColor: #d9520f;
+    --deepBlueColor: #035afc;
+    --orangeColor: #e87b27;
     --whiteColor: #fff;
     --greyColor: #6e6c6b;
     --mainGreyColor: #f0f2f0;
@@ -20,11 +20,11 @@ body{
     color: var(--textColor);
 }
 .headSection{
-    background-color:var(--deepBlueColor);
+    background-color:var(--whiteColor);
     top: 0;
     position: sticky;
     z-index: 20;
-    box-shadow: 0 0 20px rgb(146, 158, 158);
+    /* box-shadow: 0 0 20px rgb(146, 158, 158); */
 }
 .headerContent{
     display: flex;
@@ -60,7 +60,7 @@ body{
 .headerContent .navMenuItems ul li a{
     text-decoration: none;
     /* color: #072ad9; */
-    color: var(--whiteColor);
+    color: var(--deepBlueColor);
 }
 .homeSection{
     display: flex;
@@ -166,6 +166,13 @@ body{
     text-decoration: none;
     border-radius: 5px;
 }
+.aboutSection .aboutUsContent{
+    text-align: right;
+}
+.aboutSection .aboutUsContent .aboutUsTheme{
+    width: 30%;
+    margin: 0 auto 0 0 ;
+}
 .serviceContent{
     /* display: flex; */
     justify-content: space-between;
@@ -195,18 +202,40 @@ body{
 .courseSection{
     background-color: var(--mainGreyColor);
 }
-
-.courseItems{
+.courseSection .courseContent{
     display: flex;
     justify-content: space-between;
-    margin: 2.5rem 0;
+    align-items: center;
+}
+.courseSection .courseContent .courseTheme{
+    display: grid;
+    gap: 10px;
+}
+.courseSection .courseContent .courseItems{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: var(--deepBlueColor); */
+    position: relative;
+    padding: 20px 10px 0;
+    box-shadow: 0 0 10px #eee;
+}
+.courseSection .courseContent .courseItems::before{
+    content: '';
+    background-color: var(--deepBlueColor);
+    width: 100%;
+    top: 0;
+    height: 170px;
+    position: absolute;
+    z-index: 0;
 }
 
 .courseItemBox{
-    width: 22%;
-    padding: 10px;
-    /* border: 2px solid #0a053d; */
-    box-shadow: 0 2px 5px #0a053d;
+    width: 30%;
+    height: 200px;
+    background-color: var(--mainGreyColor); 
+    z-index: 2;
 }
 .courseItemBox h1{
     font-size: 1.25rem;
