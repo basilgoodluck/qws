@@ -195,3 +195,19 @@ body{
 .courseSection{
     background-color: var(--mainGreyColor);
 }
+
+.courseItems{
+    display: flex;
+    justify-content: space-between;
+    margin: 2.5rem 0;
+}
+
+.courseItemBox{
+    width: 22%;
+    padding: 10px;
+    /* border: 2px solid #0a053d; */
+    box-shadow: 0 2px 5px #0a053d;
+}
+.courseItemBox h1{
+    font-size: 1.25rem;
+}
